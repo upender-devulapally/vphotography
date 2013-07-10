@@ -6,7 +6,7 @@ gem 'rails', '3.2.11'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+gem 'mysql2'
 
 
 # Gems used only for assets and not required
@@ -19,6 +19,7 @@ group :assets do
   # gem 'therubyracer', :platforms => :ruby
 
   gem 'uglifier', '>= 1.0.3'
+  #gem 'therubyracer', :platforms => :ruby, :require => 'v8'
 end
 
 gem 'jquery-rails'
@@ -48,9 +49,6 @@ gem 'rolify'
 gem 'simple_form'
 gem 'thin'
 
-group :assets do
-  gem 'therubyracer', :platform=>:ruby, :require=>"v8"
-end
 
 group :development do
   gem 'better_errors'
